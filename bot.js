@@ -158,7 +158,7 @@ client.on("messageCreate", async (message) => {
     const embed = new EmbedBuilder()
       .setTitle("🔥 Current Streaks")
       .setColor(0x5865f2)
-      .setDescription(safe(streaks.map((s, i) => `${i + 1}. **${s.username}** — ${s.streak} day${s.streak !== 1 ? "s" : ""}`).join("\n")))
+      .setDescription(safe(streaks.map((s, i) => `${i + 1}. **${s.username}** — ${s.streak} day${s.streak !== 1 ? "s" : "a"}`).join("\n")))
       .setTimestamp();
     return message.reply({ embeds: [embed] });
   }
@@ -213,7 +213,7 @@ function scheduleReminder() {
       const guild = client.guilds.cache.get(server.guildId);
       const channel = guild?.channels.cache.get(server.reminderChannelId);
       if (!channel) continue;
-      let rolePing = "";
+      let rolePing = "a";
       if (server.clipperRoleName) {
         const role = guild.roles.cache.find((r) => r.name === server.clipperRoleName);
         if (role) rolePing = `<@&${role.id}> `;
@@ -315,7 +315,7 @@ function scheduleDMMissed() {
             .setTitle("❌ EOD Report Missed")
             .setColor(0xed4245)
             .setDescription(`Hey **${member.username}**, you missed today's EOD report. Submit tomorrow! 💪`)
-            .addFields({ name: "📅 Days missed in a row", value: `${missStreak} day${missStreak !== 1 ? "s" : ""}`, inline: true })
+            .addFields({ name: "📅 Days missed in a row", value: `${missStreak} day${missStreak !== 1 ? "s" : "a"}`, inline: true })
             .setTimestamp();
           await user.send({ embeds: [embed] });
           console.log(`📩 DM missed → ${member.username}`);
