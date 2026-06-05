@@ -22,7 +22,7 @@ const SERVERS = [
     eodChannelId: "1512396753310318744",
     logChannelId: "1512396831101947987",
     reminderChannelId: "1512396753310318744",
-    clipperRoleName: "clippers",
+    clipperRoleName: "Clippers",
   },
 ];
 
