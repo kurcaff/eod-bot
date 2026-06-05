@@ -1,13 +1,11 @@
 {
-  "name": "eod-clipper-bot",
+  "name": "eod-bot",
   "version": "1.0.0",
-  "description": "Discord EOD submission tracker for clippers",
   "main": "bot.js",
-  "scripts": {
-    "start": "node bot.js"
-  },
+  "scripts": { "start": "node bot.js" },
   "dependencies": {
     "discord.js": "^14.0.0",
-    "node-cron": "^3.0.0"
+    "node-cron": "^3.0.0",
+    "mongodb": "^6.0.0"
   }
 }
