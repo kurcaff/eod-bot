@@ -2,10 +2,12 @@
   "name": "eod-bot",
   "version": "1.0.0",
   "main": "bot.js",
-  "scripts": { "start": "node bot.js" },
+  "scripts": {
+    "start": "node bot.js"
+  },
   "dependencies": {
     "discord.js": "^14.0.0",
-    "node-cron": "^3.0.0",
-    "mongodb": "^6.0.0"
+    "mongodb": "^6.21.0",
+    "node-cron": "^3.0.0"
   }
 }
