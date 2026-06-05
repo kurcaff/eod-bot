@@ -20,7 +20,7 @@ const SERVERS = [
 ];
 
 const CONFIG = {
-  token: "MTUwOTIxMDM1ODMwNzQ5MTk0MA.GtP4Ub.snnVh8diJo2o4l3dAtbfCm6YAX99iITqo9Hmk8",
+  token: process.env.TOKEN,
   reminderTime:   "0 16 * * *",
   summaryTime:    "0 19 * * *",
   dmReminderTime: "0 21 * * *",
