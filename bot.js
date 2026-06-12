@@ -29,10 +29,10 @@ const SERVERS = [
 const CONFIG = {
   token: process.env.TOKEN,
   mongoUrl: process.env.MONGODB_URL,
-  reminderTime:   "0 16 * * *",
+  reminderTime:   "0 21 * * *",
   summaryTime:    "0 19 * * *",
   dmReminderTime: "0 21 * * *",
-  dmMissedTime:   "5 23 * * *",
+  dmMissedTime:   "0 23 * * *",
 };
 
 let db;
